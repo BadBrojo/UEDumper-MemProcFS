@@ -142,7 +142,7 @@
       <TreatWarningAsError>false</TreatWarningAsError>
       <Optimization>MaxSpeed</Optimization>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalIncludeDirectories>C:\Users\Ryan-PC\Downloads\UEDumper-1.5.2\UEDumper-1.5.2\UEDumper\Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)UEDumper\Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -152,8 +152,16 @@
       <AdditionalDependencies>D3D11.lib;windowscodecs.lib;kernel32.lib;vmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>
       </IgnoreSpecificDefaultLibraries>
-      <AdditionalLibraryDirectories>C:\Users\Ryan-PC\Downloads\UEDumper-1.5.2\UEDumper-1.5.2\UEDumper\Includes;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)UEDumper\Includes;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)UEDumper\Includes\dbghelp.dll" "$(OutDir)"
+copy "$(SolutionDir)UEDumper\Includes\FTD3XX.dll" "$(OutDir)"
+copy "$(SolutionDir)UEDumper\Includes\leechcore.dll" "$(OutDir)"
+copy "$(SolutionDir)UEDumper\Includes\symsrv.dll" "$(OutDir)"
+copy "$(SolutionDir)UEDumper\Includes\vcruntime140.dll" "$(OutDir)"
+copy "$(SolutionDir)UEDumper\Includes\vmm.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Engine\Core\Core.cpp" />
