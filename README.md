@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/github/stars/Spuckwaffel/UEDumper" alt="Stars">
   <img src="https://img.shields.io/github/forks/Spuckwaffel/UEDumper" alt="Forks">
 </p>
-<p>UEDumper is a all in one Unreal Engine Dumper that supports Unreal Engine 4.19 - Unreal Engine 5.2.0 and a live editor, where you can view the generated SDK at runtime and modify the games' memory.</p>
+<p>UEDumper is a all in one Unreal Engine Dumper that supports Unreal Engine 4.19 - Unreal Engine 5.2.0 and a live editor, where you can view the generated SDK at runtime and modify the games' memory. 123</p>
 <p><a href="#features">Features</a> &bull; 
   <a href="#getting-started">Getting Started</a> &bull; 
   <a href="#support-for-your-game">Your Game</a> &bull; 
